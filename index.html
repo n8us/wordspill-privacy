@@ -47,4 +47,157 @@
   .pill{display:inline-block;background:#eef4f0;color:var(--accent);border:1px solid #d6e3da;
         border-radius:999px;padding:2px 10px;font-size:12px;font-weight:600;margin-right:6px}
   .note{background:#fff8ea;border:1px solid #f0e2c2;border-left:4px solid var(--gold);
-        border-radius:8px;padding:12px 
+        border-radius:8px;padding:12px 14px;font-size:14px;color:#5a4a23}
+  a{color:var(--accent)}
+  footer{max-width:760px;margin:0 auto;padding:0 20px 60px;color:var(--muted);font-size:13px}
+  code{background:#eef1ef;padding:1px 6px;border-radius:5px;font-size:14px}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <h1>Privacy Policy</h1>
+    <p>Wordspill · operated by N8</p>
+  </div>
+</header>
+
+<main>
+  <p class="meta">Effective date: <strong>July 25, 2026</strong></p>
+
+  <nav class="toc" aria-label="Table of contents">
+    <strong>Contents</strong>
+    <ol>
+      <li><a href="#intro">Introduction</a></li>
+      <li><a href="#collect">Information we collect</a></li>
+      <li><a href="#third">Third‑party services</a></li>
+      <li><a href="#use">How information is used</a></li>
+      <li><a href="#offline">Offline‑first design</a></li>
+      <li><a href="#security">Storage &amp; security</a></li>
+      <li><a href="#children">Children's privacy</a></li>
+      <li><a href="#rights">Your rights &amp; choices</a></li>
+      <li><a href="#retention">Data retention</a></li>
+      <li><a href="#changes">Changes to this policy</a></li>
+      <li><a href="#contact">Contact us</a></li>
+    </ol>
+  </nav>
+
+  <section id="intro">
+    <h2>1. Introduction</h2>
+    <p>This Privacy Policy explains what happens to information when you use <strong>Wordspill</strong> (the "App"), a word‑unscrambling utility provided by <strong>N8</strong> ("we", "us", "our"). It applies to the App on Android and iOS.</p>
+    <p>Our design principle is simple: <strong>the App has no account, no login, and no server of its own.</strong> We do not run a backend that stores your personal data. The core word‑finding feature works entirely on your device. Where information is collected, it is collected by your device's operating system or by the third‑party services described below, not by us.</p>
+    <p>Please read this carefully. By using the App, you agree to this Policy.</p>
+  </section>
+
+  <section id="collect">
+    <h2>2. Information we collect</h2>
+
+    <h3>2.1 Information stored on your device (by you)</h3>
+    <p>The App stores the following <strong>only on your device</strong>, using local storage. None of it is transmitted to us or to any server we operate:</p>
+    <ul>
+      <li>Your app settings (chosen dictionary, scoring game, preferences).</li>
+      <li>Your search history (capped at the most recent 100 searches).</li>
+      <li>Words you save to Favorites.</li>
+    </ul>
+
+    <h3>2.2 Information we collect automatically</h3>
+    <p><strong>None.</strong> The App includes <span class="pill">no analytics</span> <span class="pill">no crash reporting</span> <span class="pill">no user profiling</span>. We do not collect usage statistics, device fingerprints, or advertising profiles of our own.</p>
+
+    <h3>2.3 Permissions</h3>
+    <p>The App requests the <strong>minimum</strong> permissions needed:</p>
+    <ul>
+      <li><strong>Microphone</strong> — requested only at the moment you tap the microphone icon, and only to convert your speech into letters. It is not accessed at launch or in the background.</li>
+      <li><strong>Internet</strong> — used only to (a) load word definitions when you tap a word, (b) display ads, and (c) fetch font files. The core solver does not need the internet.</li>
+    </ul>
+    <p>The App does <strong>not</strong> request or access your location, contacts, camera, photos, or external storage.</p>
+  </section>
+
+  <section id="third">
+    <h2>3. Third‑party services</h2>
+    <p>The App integrates the following third‑party services. These services may collect and process data according to their own privacy policies, which we link below. We do not control their data practices.</p>
+
+    <h3>3.1 Advertising — Google AdMob</h3>
+    <p>To keep the App free, we show ads provided by Google AdMob. Google's advertising SDK may collect data such as your advertising identifier (e.g. Android Advertising ID / Apple IDFA), device and operating‑system information, IP address (used to derive <em>approximate</em> location), and information about the ads you see and interact with, in order to serve and measure ads. We do not receive this data. See
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> and
+      <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">How AdMob uses data</a>.</p>
+    <p>Where required by law (for example in the European Economic Area, the UK, or Switzerland), we present a consent notice before personalized ads are shown, and you may withdraw consent at any time.</p>
+
+    <h3>3.2 Voice input — your device's speech‑recognition service</h3>
+    <p>When you tap the microphone, your spoken audio is processed by your device's operating‑system speech‑recognition service — typically <strong>Google's speech service on Android</strong> or <strong>Apple's Speech framework on iOS</strong>. Depending on your device and settings, that audio may be transmitted to and processed by Google or Apple to produce the text. <strong>We do not receive, record, or store this audio.</strong> See
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> and
+      <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple Privacy Policy</a>.</p>
+
+    <h3>3.3 Word definitions — dictionaryapi.dev</h3>
+    <p>When you tap a word to view its definition, the App sends an online request (over HTTPS) containing that word to the free dictionary service at <code>dictionaryapi.dev</code>. That service will see the requested word and your device's IP address. This feature is optional and only runs when you tap a word while online. See
+      <a href="https://dictionaryapi.dev/" target="_blank" rel="noopener">dictionaryapi.dev</a>.</p>
+
+    <h3>3.4 Fonts — Google Fonts</h3>
+    <p>The App may download font files from Google's font servers to render its interface. As with any web request, Google will see your IP address as part of delivering those files. See
+      <a href="https://developers.google.com/fonts/faq#what_does_using_the_google_fonts_api_mean_for_the_privacy_of_my_users" target="_blank" rel="noopener">Google Fonts privacy FAQ</a>.</p>
+
+    <h3>3.5 Purchases — Google Play / Apple App Store</h3>
+    <p>The optional one‑time "Remove Ads" purchase is processed entirely by Google Play Billing or Apple's App Store. We receive only the fact that a purchase was completed (so we can remove ads); we never see your payment card or billing details.</p>
+  </section>
+
+  <section id="use">
+    <h2>4. How information is used</h2>
+    <ul>
+      <li><strong>Locally stored data</strong> (settings, history, favorites) is used only to make the App work for you on your device.</li>
+      <li><strong>Third‑party data</strong> is used by those services to provide ads, speech recognition, definitions, fonts, and billing, as described in Section 3.</li>
+    </ul>
+    <p>We do not sell, rent, or share personal information with data brokers, and we do not build advertising profiles of our own.</p>
+  </section>
+
+  <section id="offline">
+    <h2>5. Offline‑first design</h2>
+    <p>The core feature — unscrambling your letters into valid words — runs <strong>100% on your device</strong> and transmits nothing. It works with no internet connection, in airplane mode, and with no signal. Only the optional features (definitions, ads, fonts) use the network.</p>
+  </section>
+
+  <section id="security">
+    <h2>6. Storage &amp; security</h2>
+    <p>Because we operate no server and hold no account data, there is no central database of your information for us to secure or breach. Your locally stored data is kept within your device's protected app storage. We recommend keeping your device's operating system and lock screen up to date.</p>
+  </section>
+
+  <section id="children">
+    <h2>7. Children's privacy</h2>
+    <p>The App is a general‑audience utility and is <strong>not directed to children under 13</strong> (or under the applicable age in your jurisdiction). We do not knowingly collect personal information from children. The App contains no account and collects no personal data of our own. If you believe a child has provided information through a third‑party service used by the App, please contact us and we will take appropriate steps.</p>
+  </section>
+
+  <section id="rights">
+    <h2>8. Your rights &amp; choices</h2>
+    <p>Depending on where you live (including the EEA, UK, and California), you may have rights to access, correct, delete, or port personal information, to object to processing, and to withdraw consent. Because we hold no personal data on any server, most of your data lives only on your device and is fully under your control:</p>
+    <ul>
+      <li><strong>Delete your history / favorites / settings:</strong> use the in‑app clear options, or uninstall the App to remove all locally stored data.</li>
+      <li><strong>Stop personalized ads / reset ad identifiers:</strong> reset your Advertising ID and adjust ad‑personalization settings in your device settings; where offered, decline or withdraw ad consent in the App's consent notice.</li>
+      <li><strong>Stop voice transmission:</strong> simply don't use the microphone; you can also deny the microphone permission.</li>
+      <li><strong>Definitions:</strong> use the App offline to avoid any definition lookups.</li>
+    </ul>
+    <p>For data held by a third party (Google, Apple, the dictionary service), you can exercise your rights directly with that provider using the links in Section 3. You may also contact us at <a href="mailto:innatetelos@icloud.com">innatetelos@icloud.com</a> and we will assist where we can.</p>
+    <p><strong>California (CCPA/CPRA):</strong> We do not "sell" or "share" personal information as defined by California law. The identifiers and approximate location processed by Google AdMob are used for advertising; you may opt out of personalized advertising via your device settings or the App's consent notice.</p>
+  </section>
+
+  <section id="retention">
+    <h2>9. Data retention</h2>
+    <p>Locally stored history is automatically capped at the 100 most recent searches; favorites and settings remain until you clear them or uninstall the App. We retain no personal data on any server, so there is no server‑side retention period on our side. Third parties retain data according to their own policies.</p>
+  </section>
+
+  <section id="changes">
+    <h2>10. Changes to this policy</h2>
+    <p>We may update this Policy from time to time, for example when we add features or services. We will change the "Effective date" at the top and, where appropriate, notify you in the App. Continued use after changes means you accept the updated Policy.</p>
+  </section>
+
+  <section id="contact">
+    <h2>11. Contact us</h2>
+    <p>Questions, requests, or concerns about this Policy? Contact the developer:</p>
+    <div class="note">
+      <strong>N8</strong><br />
+      Email: <a href="mailto:innatetelos@icloud.com">innatetelos@icloud.com</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © <span id="y"></span> N8. This page is the privacy policy for Wordspill.
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</footer>
+</body>
+</html>
