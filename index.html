@@ -204,7 +204,6 @@
                 <li><a href="#collect">Information we collect</a></li>
                 <li><a href="#third">Third‑party services</a></li>
                 <li><a href="#use">How information is used</a></li>
-                <li><a href="#design">On‑device design</a></li>
                 <li><a href="#security">Storage &amp; security</a></li>
                 <li><a href="#children">Children's privacy</a></li>
                 <li><a href="#rights">Your rights &amp; choices</a></li>
@@ -220,9 +219,7 @@
                 "App"), a word‑unscrambling utility provided by <strong>N8</strong> ("we", "us", "our"). It applies to
                 the App on Android and iOS.</p>
             <p>Our design principle is simple: <strong>the App has no account, no login, and no server of its
-                    own.</strong> We do not run a backend that stores your personal data. The core word‑finding feature
-                works entirely on your device. Where information is collected, it is collected by your device's
-                operating system or by the third‑party services described below, not by us.</p>
+                    own.</strong> We do not run a backend that stores your personal data. Where information is processed, it is handled on your device or by the third‑party services described below, not by us.</p>
             <p>Please read this carefully. By using the App, you agree to this Policy.</p>
         </section>
 
@@ -246,12 +243,10 @@
             <h3>2.3 Permissions</h3>
             <p>The App requests the <strong>minimum</strong> permissions needed:</p>
             <ul>
-                <li><strong>Microphone</strong> — requested only at the moment you tap the microphone icon, and only to
-                    convert your speech into letters. It is not accessed at launch or in the background.</li>
-                <li><strong>Internet</strong> — used only to (a) load word definitions when you tap a word, (b) display
-                    ads, and (c) fetch font files. The core solver does not need the internet.</li>
+                <li><strong>Internet</strong> — used to (a) load word definitions when you tap a word, (b) display
+                    ads, (c) process in-app purchases, and (d) fetch font files.</li>
             </ul>
-            <p>The App does <strong>not</strong> request or access your location, contacts, camera, photos, or external
+            <p>The App does <strong>not</strong> request or access your location, contacts, camera, microphone, photos, or external
                 storage.</p>
         </section>
 
@@ -275,37 +270,24 @@
             <p>Where required by law (for example in the European Economic Area, the UK, or Switzerland), we present a
                 consent notice before personalized ads are shown, and you may withdraw consent at any time.</p>
 
-            <h3>3.2 Voice input — your device's speech‑recognition service</h3>
-            <p>When you tap the microphone, your spoken audio is processed by your device's operating‑system
-                speech‑recognition service — typically <strong>Google's speech service on Android</strong> or
-                <strong>Apple's Speech framework on iOS</strong>. Depending on your device and settings, that audio may
-                be transmitted to and processed by Google or Apple to produce the text. <strong>We do not receive,
-                    record, or store this audio.</strong> See
-                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>
-                and
-                <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple Privacy Policy</a>.
-            </p>
-
-            <h3>3.3 Word definitions — dictionaryapi.dev</h3>
+            <h3>3.2 Word definitions — dictionaryapi.dev</h3>
             <p>When you tap a word to view its definition, the App sends an online request (over HTTPS) containing that
                 word to the free dictionary service at <code>dictionaryapi.dev</code>. That service will see the
-                requested word and your device's IP address. This feature is optional and only runs when you tap a word
-                while online. See
+                requested word and your device's IP address. See
                 <a href="https://dictionaryapi.dev/" target="_blank" rel="noopener">dictionaryapi.dev</a>.
             </p>
 
-            <h3>3.4 Fonts — Google Fonts</h3>
+            <h3>3.3 Fonts — Google Fonts</h3>
             <p>The App may download font files from Google's font servers to render its interface. As with any web
                 request, Google will see your IP address as part of delivering those files. See
                 <a href="https://developers.google.com/fonts/faq#what_does_using_the_google_fonts_api_mean_for_the_privacy_of_my_users"
                     target="_blank" rel="noopener">Google Fonts privacy FAQ</a>.
             </p>
 
-            <h3>3.5 Purchases — Google Play / Apple App Store</h3>
-            <p>The optional non‑renewing ad‑free passes (e.g., 1 Month, 3 Months, 12 Months) are processed entirely by
+            <h3>3.4 Purchases — Google Play / Apple App Store</h3>
+            <p>The optional non‑renewing ad‑free passes (1 Month, 3 Months, 12 Months) are processed entirely by
                 Google Play Billing or Apple's App Store. We receive only the purchase completion status and expiration
-                timestamp
-                to grant ad‑free status; we never see your payment card or billing details.</p>
+                timestamp to grant ad‑free status; we never see your payment card or billing details.</p>
         </section>
 
         <section id="use">
@@ -313,29 +295,21 @@
             <ul>
                 <li><strong>Locally stored data</strong> (settings, history, favorites) is used only to make the App
                     work for you on your device.</li>
-                <li><strong>Third‑party data</strong> is used by those services to provide ads, speech recognition,
-                    definitions, fonts, and billing, as described in Section 3.</li>
+                <li><strong>Third‑party data</strong> is used by those services to provide ads, definitions, fonts, and billing, as described in Section 3.</li>
             </ul>
             <p>We do not sell, rent, or share personal information with data brokers, and we do not build advertising
                 profiles of our own.</p>
         </section>
 
-        <section id="design">
-            <h2>5. On‑device design</h2>
-            <p>The core word‑finding solver runs <strong>100% on your device</strong> using local dictionaries.
-                Network connectivity is used for online word definitions, displaying advertisements, downloading fonts,
-                and processing in‑app purchases.</p>
-        </section>
-
         <section id="security">
-            <h2>6. Storage &amp; security</h2>
+            <h2>5. Storage &amp; security</h2>
             <p>Because we operate no server and hold no account data, there is no central database of your information
                 for us to secure or breach. Your locally stored data is kept within your device's protected app storage.
                 We recommend keeping your device's operating system and lock screen up to date.</p>
         </section>
 
         <section id="children">
-            <h2>7. Children's privacy</h2>
+            <h2>6. Children's privacy</h2>
             <p>The App is a general‑audience utility and is <strong>not directed to children under 13</strong> (or under
                 the applicable age in your jurisdiction). We do not knowingly collect personal information from
                 children. The App contains no account and collects no personal data of our own. If you believe a child
@@ -344,7 +318,7 @@
         </section>
 
         <section id="rights">
-            <h2>8. Your rights &amp; choices</h2>
+            <h2>7. Your rights &amp; choices</h2>
             <p>Depending on where you live (including the EEA, UK, and California), you may have rights to access,
                 correct, delete, or port personal information, to object to processing, and to withdraw consent. Because
                 we hold no personal data on any server, most of your data lives only on your device and is fully under
@@ -355,10 +329,7 @@
                 <li><strong>Stop personalized ads / reset ad identifiers:</strong> reset your Advertising ID and adjust
                     ad‑personalization settings in your device settings; where offered, decline or withdraw ad consent
                     in the App's consent notice.</li>
-                <li><strong>Stop voice transmission:</strong> simply don't use the microphone; you can also deny the
-                    microphone permission.</li>
-                <li><strong>Definitions:</strong> word definitions are fetched only when you tap a word while online;
-                    you can avoid network requests by not opening word details.</li>
+                <li><strong>Definitions:</strong> word definitions are fetched when you tap a word; you can avoid definition requests by not tapping words for definitions.</li>
             </ul>
             <p>For data held by a third party (Google, Apple, the dictionary service), you can exercise your rights
                 directly with that provider using the links in Section 3. You may also contact us at <a
@@ -370,7 +341,7 @@
         </section>
 
         <section id="retention">
-            <h2>9. Data retention</h2>
+            <h2>8. Data retention</h2>
             <p>Locally stored history is automatically capped at the 100 most recent searches; favorites and settings
                 remain until you clear them or uninstall the App. We retain no personal data on any server, so there is
                 no server‑side retention period on our side. Third parties retain data according to their own policies.
@@ -378,14 +349,14 @@
         </section>
 
         <section id="changes">
-            <h2>10. Changes to this policy</h2>
+            <h2>9. Changes to this policy</h2>
             <p>We may update this Policy from time to time, for example when we add features or services. We will change
                 the "Effective date" at the top and, where appropriate, notify you in the App. Continued use after
                 changes means you accept the updated Policy.</p>
         </section>
 
         <section id="contact">
-            <h2>11. Contact us</h2>
+            <h2>10. Contact us</h2>
             <p>Questions, requests, or concerns about this Policy? Contact the developer:</p>
             <div class="note">
                 <strong>N8</strong><br />
